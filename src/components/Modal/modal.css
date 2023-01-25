@@ -19,22 +19,10 @@
 	pointer-events: all;
 }
 
-.closeModal {
-	position: absolute;
-  top: -20px;
-  right: -5px;
-	color: azure;
-  background-color: Transparent;
-  background-repeat: no-repeat;
-  border: none;
-  cursor: pointer;
-}
-
 .modal-content{
 	padding: 20px;
-	border-radius: 12px;
-	background: #191d3a;
-	height: 400px;
+	border-radius: 10px;
+	background: #9dcdc0;
 	width: 400px;
 	transform: scale(0.5);
 	transition: 0.4s all;
@@ -47,9 +35,6 @@
 .modal-content h1 {
 	text-align: center;
 }
-form {
-	margin-left: 15px;
-}
 
 .input {
 	height: 80px;
@@ -57,11 +42,12 @@ form {
 
 .input input {
 	display: block;
+	box-sizing: border-box;
 	margin-top: 5px;
 	border: 0;
   border-radius: 5px;
-	width: 350px;
-	height: 20px;
+	padding: 10px;
+	width: 100%;
 }
 
 .input .inputError span {
@@ -70,18 +56,21 @@ form {
 
 .buttons {
 	margin-top: 20px;
+	display: flex;
+	justify-content: space-between;
+
 }
 
 .buttons button {
 	width: 175px;
-	height: 30px;
-	margin-right: 10px;
 	border: 0;
-  border-radius: 50px;
-	background-color: #F08080;
+  border-radius: 5px;
+	background-color: #f8fa90;
 	cursor: pointer;
+	padding: 10px;
+  font-size: 1.2em;
  }
 
  .buttons button:active {
-	background-color: #CD5C5C;
+	background-color: #f4ef88;
  }

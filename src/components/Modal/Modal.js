@@ -24,7 +24,6 @@ function Modal({active, setActive}) {
   return (
     <div className={active ? "modal active" : "modal"} onClick={() => setActive(false)}>
       <div className={active ? "modal-content active" : "modal-content"} onClick={e => e.stopPropagation()}>
-        <button type='button'className='closeModal' onClick={() => setActive(false)}>X</button>
         <h1>Register form</h1>
         <form onSubmit={handleSubmit(onSubmit)}>
           <div className='input'>
